@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrarse</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/png" href="img/logo1.png">
+    <style>
+        .body-with-bars {
+            padding-top: 200px; /* Espacio para la barra de navegación fijangvhh */
+        }
+    </style>
+</head>
+<body class="body-with-bars">
+
+    <div class="Principal">
+	<!-- Barra rosada superior -->
+        <div class="top-bar d-flex justify-content-end align-items-center px-3">
+            <a href="Carrito.html" class="btn btn-top">
+                <i class="fas fa-shopping-cart"></i> Carrito
+            </a>
+            <a href="Mi_Cuenta.html" class="btn btn-top">
+                <i class="fas fa-user-circle"></i> Cuenta
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo1.png" alt="Biscotti" width="" height="60" class="d-inline-block align-text-top me-2">
+                    <i class="bi bi-house-heart-fill pet-icon"></i>Biscotti Cordano
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li clas="nav-item">    
+                            <a class="nav-link" href="Conocenos.html">Conocenos</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex ms-3" role="buscar">
+                        <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar"/>
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container registration-container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <form id="registration-form">
+                            <div class="row">
+                                <!-- Información Personal -->
+                                <div class="col-md-6">
+                                    <h4 class="section-title"><i class="fas fa-user me-2"></i>INFORMACIÓN PERSONAL</h4>
+                                    <div class="mb-3">
+                                        <label for="firstName" class="form-label">Nombre <span class="required-field">*</span></label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Ingresa tu nombre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="lastName" class="form-label">Apellidos <span class="required-field">*</span></label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Ingresa tus apellidos">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="birthDate" class="form-label">Fecha de nacimiento</label>
+                                        <input type="date" class="form-control" id="birthDate">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="rut" class="form-label">Rut (Opcional)</label>
+                                        <input type="text" class="form-control" id="rut" placeholder="12.345.678-9">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Sexo</label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                                <label class="form-check-label" for="male">Masculino</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                                <label class="form-check-label" for="female">Femenino</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                                                <label class="form-check-label" for="other">Otro</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Información de Inicio de Sesión -->
+                                <div class="col-md-6">
+                                    <h4 class="section-title"><i class="fas fa-key me-2"></i>INFORMACIÓN DE INICIO DE SESIÓN</h4>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo electrónico <span class="required-field">*</span></label>
+                                        <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Contraseña <span class="required-field">*</span></label>
+                                        <input type="password" class="form-control" id="password" placeholder="Crea una contraseña segura">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="confirmPassword" class="form-label">Confirmar contraseña <span class="required-field">*</span></label>
+                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Repite tu contraseña">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="rememberMe" checked>
+                                            <label class="form-check-label" for="rememberMe">
+                                                Recordarme
+                                            </label>
+                                        </div>
+                                        <div class="help-text">
+                                            <i class="fas fa-question-circle me-1"></i> Al seleccionar esta opción, tu sesión permanecerá activa en este dispositivo.
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="help-text"><span class="required-field">*</span> Campos obligatorios</p>
+                                    </div>
+                                    <button type="submit" class="btn btn-register w-100">
+                                        <i class="fas fa-user-plus me-2"></i>Crear una cuenta
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-warning text-dark py-5 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 mb-3 text-center text-md-start">
+                        <img src="img/logo1.png" alt="Logo" style="width: 120px;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Conócenos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="Despacho.html" class="text-dark text-decoration-none">Despacho</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Términos y condiciones</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Redes sociales</h5>
+                        <ul class="list-unstyled d-flex gap-3">
+                            <li>
+                                <a href="https://www.instagram.com/biscotti.cordano/" class="text-dark text-decoration-none" target="_blank" aria-label="Instagram">
+                                    <i class="fab fa-instagram fa-lg"></i> Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/biscotti.cordano/" class="text-dark text-decoration-none" target="_blank" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f fa-lg"></i> Facebook
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Mi cuenta</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="Productos.html" class="text-dark text-decoration-none">Pedir</a></li>
+                            <li><a href="Mi_Cuenta.html" class="text-dark text-decoration-none">Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="mb-0">Todos los derechos reservados - Biscotti Cordano</p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const registrationForm = document.getElementById('registration-form');
+                const passwordInput = document.getElementById('password');
+                const passwordStrengthBar = document.getElementById('passwordStrengthBar');
+                const passwordStrengthText = document.getElementById('passwordStrengthText');
+                
+                // Validar fuerza de contraseña en tiempo real
+                passwordInput.addEventListener('input', function() {
+                    checkPasswordStrength(this.value);
+                });
+                
+                // Envío del formulario
+                registrationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    if (validateForm()) {
+                        // Simulación de envío exitoso
+                        alert('¡Cuenta creada con éxito! Bienvenido/a.');
+                        // Aquí normalmente se enviarían los datos al servidor
+                    }
+                });
+                
+                // Función para validar el formulario
+                function validateForm() {
+                    let isValid = true;
+                    
+                    // Validar nombre
+                    const firstName = document.getElementById('firstName');
+                    const firstNameError = document.getElementById('firstNameError');
+                    if (!firstName.value.trim()) {
+                        showError(firstNameError, 'El nombre es requerido');
+                        isValid = false;
+                    } else {
+                        hideError(firstNameError);
+                    }
+                    
+                    // Validar apellidos
+                    const lastName = document.getElementById('lastName');
+                    const lastNameError = document.getElementById('lastNameError');
+                    if (!lastName.value.trim()) {
+                        showError(lastNameError, 'Los apellidos son requeridos');
+                        isValid = false;
+                    } else {
+                        hideError(lastNameError);
+                    }
+                    
+                    // Validar email
+                    const email = document.getElementById('email');
+                    const emailError = document.getElementById('emailError');
+                    if (!email.value.trim()) {
+                        showError(emailError, 'El correo electrónico es requerido');
+                        isValid = false;
+                    } else if (!isValidEmail(email.value)) {
+                        showError(emailError, 'Ingresa un correo electrónico válido');
+                        isValid = false;
+                    } else {
+                        hideError(emailError);
+                    }
+                    
+                    // Validar contraseña
+                    const password = document.getElementById('password');
+                    const passwordError = document.getElementById('passwordError');
+                    if (!password.value.trim()) {
+                        showError(passwordError, 'La contraseña es requerida');
+                        isValid = false;
+                    } else if (password.value.length < 8) {
+                        showError(passwordError, 'La contraseña debe tener al menos 8 caracteres');
+                        isValid = false;
+                    } else {
+                        hideError(passwordError);
+                    }
+                    
+                    // Validar confirmación de contraseña
+                    const confirmPassword = document.getElementById('confirmPassword');
+                    const confirmPasswordError = document.getElementById('confirmPasswordError');
+                    if (!confirmPassword.value.trim()) {
+                        showError(confirmPasswordError, 'Confirma tu contraseña');
+                        isValid = false;
+                    } else if (password.value !== confirmPassword.value) {
+                        showError(confirmPasswordError, 'Las contraseñas no coinciden');
+                        isValid = false;
+                    } else {
+                        hideError(confirmPasswordError);
+                    }
+                    
+                    // Validar RUT (si se ha ingresado)
+                    const rut = document.getElementById('rut');
+                    const rutError = document.getElementById('rutError');
+                    if (rut.value.trim() && !isValidRUT(rut.value)) {
+                        showError(rutError, 'Ingresa un RUT válido');
+                        isValid = false;
+                    } else {
+                        hideError(rutError);
+                    }
+                    
+                    return isValid;
+                }
+                
+                // Función para validar formato de email
+                function isValidEmail(email) {
+                    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return re.test(email);
+                }
+                
+                // Función para validar RUT chileno
+                function isValidRUT(rut) {
+                    // Patrón simple para RUT chileno
+                    const rutPattern = /^[0-9]{1,2}\.[0-9]{3}\.[0-9]{3}-[0-9kK]{1}$/;
+                    return rutPattern.test(rut);
+                }
+                
+                // Función para verificar fuerza de contraseña
+                function checkPasswordStrength(password) {
+                    let strength = 0;
+                    let text = '';
+                    let barColor = '';
+                    
+                    if (password.length === 0) {
+                        text = 'Sin contraseña';
+                        barColor = '#e9ecef';
+                    } else if (password.length < 8) {
+                        text = 'Muy débil';
+                        barColor = '#dc3545';
+                        strength = 25;
+                    } else if (password.length < 10 && !/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/.test(password)) {
+                        text = 'Débil';
+                        barColor = '#fd7e14';
+                        strength = 50;
+                    } else if (password.length < 12 || !/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/.test(password)) {
+                        text = 'Media';
+                        barColor = '#ffc107';
+                        strength = 75;
+                    } else {
+                        text = 'Fuerte';
+                        barColor = '#198754';
+                        strength = 100;
+                    }
+                    
+                    passwordStrengthBar.style.width = strength + '%';
+                    passwordStrengthBar.style.backgroundColor = barColor;
+                    passwordStrengthText.textContent = 'Fuerza de la contraseña: ' + text;
+                    passwordStrengthText.style.color = barColor;
+                }
+                
+                // Función para mostrar error
+                function showError(element, message) {
+                    element.textContent = message;
+                    element.style.display = 'block';
+                }
+                
+                // Función para ocultar error
+                function hideError(element) {
+                    element.textContent = '';
+                    element.style.display = 'none';
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

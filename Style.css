@@ -1,0 +1,164 @@
+.bg-warning{
+    background-color: rgb(255, 134, 154) !important;
+}
+.btn-pink {
+    background-color: #e75480;
+    color: #fff !important;
+    border: none;
+    margin-left: 0.5rem;
+}
+.btn-pink:hover {
+    background-color: #d13c6a;
+    color: #fff !important;
+}
+.top-bar {
+    background-color: #e75480;
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1040;
+}
+
+.btn-top {
+    color: #fff !important;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.btn-top i {
+    font-size: 1.3rem;
+    margin-right: 0.3rem;
+}
+.btn-top:hover {
+    text-decoration: underline;
+    background: transparent;
+}
+.fixed-top {
+    top: 48px; /* Ajusta según el alto de tu barra rosada */
+}
+
+/* Cambia el color del check al estar seleccionado */
+.form-check-input:checked {
+    background-color: #e75480;
+    border-color: #e75480;
+}
+
+
+/* Conocenos - Sobre Mi */
+
+.sobre-mi {
+  display: flex;
+  align-items: center;            /* Centra verticalmente los hijos */
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 10%;
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 500px;              /* Asegura suficiente altura para centrar */
+  margin-top: 6rem;
+}
+
+.sobre-mi-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;            /* Centra la imagen verticalmente */
+}
+
+.sobre-mi-img img {
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid #f8cdd9;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  
+}
+
+
+/* Texto */
+.sobre-mi-texto {
+  flex: 1;
+}
+
+.sobre-mi-texto h4 {
+  color: #e87ca3; /* Rosa pastel */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.sobre-mi-texto h2 {
+  font-size: 2.3rem;
+  color: #d14779; /* Rosa más fuerte */
+  font-family: "Pacifico", cursive; /* Tipografía elegante */
+  margin-bottom: 1rem;
+}
+
+.sobre-mi-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi-texto strong {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Developers */
+
+.profile-section {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+  margin-top: 4rem;
+}
+
+.profile-section__title {
+  text-align: center;
+  color: #dc3545;
+  margin-bottom: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-card__img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-card__info {
+  margin-left: 1rem;
+}
+
+.profile-card__name {
+  margin: 0;
+  color: #e83e8c;
+  font-size: 1.25rem;
+}
+
+.profile-card__bio {
+  margin: 0;
+  color: #e83e8c;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ================================= */ 
+
+.Principal {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
